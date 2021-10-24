@@ -1,0 +1,40 @@
+.story{
+    overflow-x: auto;
+}
+.storycontainer{
+    display: flex;
+    flex-direction: row;
+}
+.story-txt-margin-left{
+margin-left: 80px;
+color:black;
+}
+.storybox{
+    border: 3px solid rgba(123, 149, 167, 0.562);
+    /* border: 3px solid red; */
+    padding: 3px;
+    border-radius: 100px;
+    margin: 10px 50px 0  50px;
+    /* background-color: black; */
+}
+.storyimg{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .storycontainer{
+        margin-left: 0;
+    }
+    .story-txt-margin-left{
+    margin-left: 25px;
+    }
+    .storybox{
+        margin:10px 0 0 10px
+    }
+    .storyimg{
+        height: 50px;
+        width: 50px;
+    }
+}

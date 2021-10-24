@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+}
+
+.header{
+  list-style-type: none;
+  overflow:hidden;
+  display:flex;
+  padding: 20px 0 20px 10px;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgb(49, 53, 53),0 6px 20px 0 rgba(255, 255, 255, 0.397) ;
+}
+
+.header-left-side{
+  justify-content: left;
+}
+
+.header-center-side{
+  margin-left: 20px;
+}
+
+.header-right-side{
+  display: flex;
+  justify-content: left;
+}
+
+.header-right-side-padding{
+   padding-left: 40px;
+}
+
+
+.icons{
+  height: 35px;
+}
+
+
+.searchbox{
+  /* 
+          border: 1px solid white;
+          border-style:none;
+          margin-left:15px ;
+          border-radius: 100px;
+          padding:10px;
+          padding-left: 30px;
+          height:15px;
+          outline: none;
+          background-color: rgb(245, 245, 245);
+          /* background-image: url('../images/lefticons/search-icon.png'); */
+          /* background-repeat: no-repeat; */ 
+      border: 1px solid rgba(255, 255, 255, 0.938);
+      outline: none;
+      border-radius: 20px;
+      margin-left: 10px; 
+      padding-left: 37px;
+      width: 200px;
+      height: 35px;
+      font-size: 20px;
+      background-color:  rgb(245, 245, 245);
+      background-image: url('../images/search-icon.png');
+      background-repeat: no-repeat;
+         /* box-shadow: 0 4px 8px 0 rgba(250, 250, 250, 0.377),0 6px 20px 0 rgba(255, 255, 255, 0.575) ; */
+      /* background-color: rgba(var(--b3f,250,250,250),1); */
+      /* background-color: rgba(240, 238, 238, 0.973); */
+  }
+
+@media screen and (max-width:700px){
+  .header{
+    padding: 15px ;
+  }
+  .header-left-side{
+    justify-content: left;
+  }
+  .header-center-side{
+    margin-left: 5px;
+  }
+  .header-right-side{
+    margin-right: 20px;
+  }
+  .icons{
+    height: 8px;
+  }
+  .searchbox{
+    width: 20px;
+  }
+ 
+}
+
+/* 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+  background-color:black;
+  box-shadow: 0 4px 8px 0 rgb(49, 53, 53),0 6px 20px 0 rgba(255, 255, 255, 0.397) ;
+}  */
+
+/* li {
+    float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+
+.floatright{
+    float: right;
+}
+
+
+/* 
+.searchbox:focus{
+  width: 300px;
+} */
+/* 
+::-webkit-input-placeholder {
+    color: red;
+} */
+

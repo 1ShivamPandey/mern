@@ -1,0 +1,161 @@
+import React, { useContext } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import { NavLink } from "react-router-dom";
+import astralshops from "../images/Header/astralshops.jpg";
+import { UserContext } from "../App";
+import profileicon from "../images/Header/download.png";
+import carticon from "../images/Header/cart.png";
+import contact from "../images/Header/helpline.png";
+import logout from "../images/Header/logout.png";
+import blackbag from "../images/Header/black-bag.png"
+import maleuser from "../images/Header/maleuser.png"
+// import blacksearch from "../images/searchblack.png"
+export const Navbar = () => {
+  
+  const { state, dispatch } = useContext(UserContext);
+
+  const RenderMenu = () => {
+    if (state) {
+      return (
+        <>
+            
+      <div className="header">
+ 
+ <div className="header-left-side">
+ <NavLink aria-current="page" to="/"> <img height="60px" width="80px" src={astralshops} alt="astralshops"/></NavLink>
+ </div>
+ 
+ 
+ <div className="header-center-side">
+ <input  className="searchbox" type="text" id="placeholdercolor" placeholder="Search"/>
+ </div>
+ 
+ 
+ <div className="header-right-side">
+ {/* 
+ <div className="header-right-side-padding">
+   <b><NavLink  style={{textDecoration:"none" ,color:"white", fontWeight:"bold", fontSize:"25px"}}  to="/Login">Login</NavLink></b>
+ </div> */}
+ 
+   <div className="header-right-side-padding">
+   <NavLink to="/Signup"><img className="icons" src={blackbag} ></img></NavLink>
+ </div>
+   <div className="header-right-side-padding">
+   <NavLink to="/About"> <img  className="icons" src={contact} ></img> </NavLink>
+ </div> 
+ 
+   <div className="header-right-side-padding">
+  <NavLink to="/Logout"><img   className="icons"  src={maleuser} ></img> </NavLink>
+  </div>
+ 
+  
+ {/* 
+  <div className="header-right-side-padding">
+  <NavLink to="/Login"><img className="icons" src={logout}></img> </NavLink>
+ </div> */}
+ 
+ </div>
+ 
+       </div>
+ 
+        </>
+      );
+    } else {
+      return (
+        
+        <>
+{/* 
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> */}
+
+
+
+        
+      <div className="header">
+ 
+<div className="header-left-side">
+<NavLink aria-current="page" to="/"> <img height="60px" width="80px" src={astralshops} alt="astralshops"/></NavLink>
+</div>
+
+
+<div className="header-center-side">
+<input  className="searchbox" type="text" id="placeholdercolor" placeholder="Search"/>
+</div>
+
+
+<div className="header-right-side">
+{/* 
+<div className="header-right-side-padding">
+  <b><NavLink  style={{textDecoration:"none" ,color:"white", fontWeight:"bold", fontSize:"25px"}}  to="/Login">Login</NavLink></b>
+</div> */}
+
+  <div className="header-right-side-padding">
+  <NavLink to="/Signup"><img className="icons" src={blackbag} ></img></NavLink>
+</div>
+{/* 
+  <div className="header-right-side-padding">
+  <NavLink to="/Contact"> <img  className="icons" src={contact} ></img> </NavLink>
+</div> */}
+
+  <div className="header-right-side-padding">
+ <NavLink to="/About"><img   className="icons"  src={maleuser} ></img> </NavLink>
+ </div>
+
+ 
+{/* 
+ <div className="header-right-side-padding">
+ <NavLink to="/Login"><img className="icons" src={logout}></img> </NavLink>
+</div> */}
+
+</div>
+
+      </div>
+
+
+
+        </>
+      );
+    }
+  };
+
+  return (
+    <>
+      <div>
+        <RenderMenu />
+      </div>
+
+      {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div className="container-fluid">
+    <NavLink className="navbar-brand" to="#">
+        <img height="80" width="100" src={astralshops} alt="astralshops"/>
+    </NavLink>
+
+    <div>
+    <input className="searchbox"  type="text" id="placeholdercolor" placeholder="Search"/>
+    </div>
+      
+
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarText">
+
+     
+    </div>
+
+
+    <RenderMenu/>
+  </div>
+</nav> */}
+    </>
+  );
+};
+
+export default Navbar;

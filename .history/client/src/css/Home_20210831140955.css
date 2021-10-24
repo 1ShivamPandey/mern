@@ -1,0 +1,10 @@
+.boxmodel{
+    background-color: rgb(252, 143, 143);
+    color: white;
+    margin-top: 50px;
+    margin-left:50px ;
+    height: auto;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgb(226, 60, 60), 0 6px 20px 0 rgb(230, 32, 32);
+
+}

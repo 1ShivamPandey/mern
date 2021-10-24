@@ -1,0 +1,44 @@
+.boxmodel{
+    background-color: rgba(49, 43, 43, 0.466);
+    color: white;
+    margin-top: 50px;
+    margin-left:50px ;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgb(49, 53, 53),0 6px 20px 0 rgba(255, 255, 255, 0.397) ;
+}
+
+
+.smallboxmodel{
+    background-color:rgb(247, 174, 174);
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+    
+}  
+
+.buybtn{ 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-top: 60px;
+    background-color: rgb(9, 15, 15);
+    border: none;
+    color: white;
+    border-color:  rgb(29, 255, 255);
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgb(49, 53, 53),0 6px 20px 0 rgba(255, 255, 255, 0.397) ;
+}
+
+.flexing{
+    display: flex;
+}
+
+h2{
+    color: black;
+}
